@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE>Fabflix</TITLE>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+	html{
+		font-family: "Open-Sans";
+	}
+	input{
+		margin-top: 20px;
+		border: none; 
+		border-bottom: 1px solid #007EE5; 
+		margin-left: 10px; 
+		padding-left: 5px;
+	}
+	form{
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.button{
+		background: transparent;
+		border: 1px solid #448afc;
+		border-radius: 3px;
+		padding: 10px;
+		font-weight: bold;
+		color: #448afc;
+		margin-top: 50px;
+	}
+</style>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</HEAD>
+
+<BODY BGCOLOR="#FDF5E6">
+<H1 ALIGN="CENTER" style="font-weight: bold;">Fabflix</H1>
+
+<FORM ACTION="/Fabflix/main"
+      METHOD="POST">
+  <b>Email:</b> <INPUT TYPE="TEXT" NAME="email"><BR>
+
+  <b>Password: </b><INPUT TYPE="PASSWORD" NAME="password"><BR>
+  <CENTER>
+    <INPUT class = "button" TYPE="SUBMIT" VALUE="Login" style="padding-left: 25px; padding-right: 25px;">
+  </CENTER>
+  <div class="g-recaptcha" data-sitekey="6Lf4DyEUAAAAAL16reEpjJvkRjmyjHsmVe0-7e66"></div>
+</FORM>
+
+</BODY>
+</HTML>
+
